@@ -379,7 +379,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
         return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
       }
       for (var key in shapeTypes) {
-        console.log(key, shapeTypes[key]);
+        console.log(shapeTypes[key]);
         var checker = shapeTypes[key];
         if (!checker) {
           continue;
